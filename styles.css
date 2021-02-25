@@ -1,0 +1,53 @@
+.ocultar {
+    display: none;
+}
+
+.fondo-editar {
+    background-image: url('img/editar.svg');
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.fondo-eliminar {
+    background-image: url('img/eliminar.svg');
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.nota-borrar {
+    background-image: url('img/eliminar.png');
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-size: cover;
+}
+
+#imprimeNotas {
+    overflow: hidden;
+}
+
+.contenedor_notas {
+    margin: 0 auto;
+}
+
+.tablaUsuario {
+    margin-top: 25px;
+}
+
+table {
+    padding: 5px;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: rgb(10, 107, 233);
+    margin: 0 auto;
+}
+
+td,
+th {
+    background: rgb(191, 190, 255);
+    color: #000;
+}
