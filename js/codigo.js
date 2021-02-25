@@ -517,81 +517,6 @@ function procesoNotasPorGrupo(datos) {
 }
 
 
-//$.ajax({method: "POST",url: "some.php",dataType: "html“,data: { name: "John", location: "Boston" }})
-
-//$.post(url[,datos ] [,callback] [,tipo_de_dato])
-
-/*function generarNotasGrupo() {
-    let txtGrupoABuscar = document.querySelector("#txtGrupoABuscar");
-    //console.log(txtUsuarioAbuscar);
-    let oListadoGrupos = oNotas._grupos;
-    let grupoABuscar = oListadoGrupos.find(oG => oG.nombreGrupo == txtGrupoABuscar.value);
-
-
-    if (!grupoABuscar) {
-        let smallError = txtGrupoABuscar.nextElementSibling;
-        smallError.textContent = "El grupo introducido no existe";
-    } else {
-        let smallError = txtGrupoABuscar.nextElementSibling;
-        smallError.textContent = "";
-
-        let contenedor = document.querySelector("#imprimeNotas");
-
-        /***************CAMBIAR ESTO*********************************************************************************************************************************** */
-/*contenedor.textContent = ""
-
-
-        let idGrupo = grupoABuscar.id
-        let oUsuarioGrupoABuscar = oNotas._usuarioGrupos.filter(oUG => oUG.idGrupo == idGrupo);
-
-
-        if (oUsuarioGrupoABuscar.length != 0) {
-
-            let oNotasDelGrupo = [];
-            let oTodasNotas = oNotas.getNotas();
-
-            let aNotas = oUsuarioGrupoABuscar[0].notas;
-
-            for (let i = 0; i < aNotas.length; i++) {
-                Nota.contenidoNotaGrupo(aNotas[i], idGrupo);
-            }
-        }
-
-
-    }
-}
-
-
-
-function generarNotasUsuario() {
-    let txtUsuarioAbuscar = document.querySelector("#txtUsuarioABuscar");
-    //console.log(txtUsuarioAbuscar);
-    let oListadoUsuarios = oNotas.getUsuarios();
-    let usuarioABuscar = oListadoUsuarios.find(oU => oU.usuario == txtUsuarioAbuscar.value)
-    if (!usuarioABuscar) {
-        let smallError = txtUsuarioAbuscar.nextElementSibling;
-        smallError.textContent = "El usuario introducido no existe";
-    } else {
-        let smallError = txtUsuarioAbuscar.nextElementSibling;
-        smallError.textContent = "";
-
-        let contenedor = document.querySelector("#imprimeNotas");
-        contenedor.innerHTML = "";
-        let numHijos = contenedor.children;
-        for (let i = 0; i < numHijos.length; i++) {
-            contenedor.removeChild(numHijos[i])
-        }
-
-        for (let i = 0; i < usuarioABuscar.notas.length; i++) {
-            Nota.contenidoNota(usuarioABuscar.notas[i], usuarioABuscar.usuario);
-        }
-    }
-
-
-}
-
-
-
 
 //EVENTOS
 
@@ -634,8 +559,6 @@ btnNotasPorUsuario.addEventListener("click", comprobarUsuarioIntroducido);
 let btnNotasPorGrupo = document.querySelector("#btnBuscarGrupo");
 btnNotasPorGrupo.addEventListener("click", comprobarGrupoIntroducido);
 
-/*let $contenedorNotas = document.getElementById("imprimeNotas");
-$contenedorNotas.addEventListener("click", borrarNotas);*/
 
 function instanciarXHR() {
     var xhttp = null;
