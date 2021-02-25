@@ -277,12 +277,12 @@ function rellenarDesplegableGrupos() {
         oListaGrupos = JSON.parse(localStorage["nombreGrupos"]);
         procesarRellenarDesplegableGrupos(oListaGrupos);
     } else {
-        $.get("grupos/listaComboGrupos.php", null, tratarGetUbicaciones, "json");
+        $.get("grupos/listaComboGrupos.php", null, tratarGetGrupos, "json");
     }
     //console.log(oListaGrupos);
 }
 
-function tratarGetUbicaciones(oListaGrupos) {
+function tratarGetGrupos(oListaGrupos) {
     procesarRellenarDesplegableGrupos(oListaGrupos);
     console.log(oListaGrupos)
     localStorage["nombreGrupos"] = JSON.stringify(oListaGrupos);
